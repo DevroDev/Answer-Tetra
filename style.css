@@ -10,17 +10,18 @@
 }
 :root {
   --primaryColor: #159e87;
-  --secondaryColor: #ff5a60;
+  --secondaryColor: #a88532;
   --textLight: #9c9c9c;
   --textDark: #000;
   --textWhite: #fff;
 }
 /*Golbal Style*/
 .about,
-.service,
-.project{
+.project,
+.team{
   background-color: #000;
 }
+
 .header-line {
   border-bottom: 3px solid var(--primaryColor);
   margin: 0 45%;
@@ -242,6 +243,8 @@
   color: var(--textLight);
 }
 .about-service-card a {
+  
+  border-radius: 30px;
   padding: 10px 30px;
   background-color: var(--primaryColor);
   color: white;
@@ -261,17 +264,76 @@
 }
 /*About Ends*/
 /*Service Start*/
-.service-right img{
+.service{
+  background-image: url(src/bg-3.jpg);
   width: 100%;
-  min-height: 40vh;
-  object-fit:cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-.service-left h1{
-  font-size: 3rem;
+.service h2{
+  color: var(--primaryColor);
+}
+.service-card{
+  background: var(--secondaryColor);
+  padding-bottom: 30px;
+  margin: 10px 30px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(161,161,161,1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(161,161,161,1);
+  box-shadow: 0px 0px 5px 1px rgba(161,161,161,1);
+}
+.service-card h3{
+  color:#fff;
   text-transform: uppercase;
+}
+.service-card span{
   font-weight: bold;
 }
+.service-card li{
+  color:#fff;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+.service-card a {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: var(--primaryColor);
+  color: white;
+}
+.service-card a:hover {
+  border: 1px solid var(--primaryColor);
+  color: black;
+  text-decoration: none;
+  background: none;
+  transition: ease-in-out 0.3s;
+}
 /*Service Ends*/
+/*Project Start*/
+.project-container {
+  padding-top: 30px;
+}
+.project-container img {
+  width: 380px;
+  height: 200px;
+}
+.project-container img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+.project-container h3 {
+  padding-top: 20px;
+  color: #159e87;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.project-container p {
+  padding: 0 30px;
+  text-align: left;
+}
+/*Project Ends*/
 /*Facts*/
 #Facts {
   background-image: url(src/bg-2.jpg);
@@ -294,6 +356,17 @@
   font-size: 1.2rem;
 }
 /*Facts Ends*/
+/*Team*/
+.team-container img{
+  object-fit:cover;
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.team-container h3{
+  padding:10px 0;
+}
+/*Team Ends*/
 .wobble,
 .bounce {
   animation-duration: 5s;
@@ -388,5 +461,23 @@
   }
   .landing-box h2 {
     font-size: 2.5rem;
+  }
+  /*Service*/
+  .service-card{
+    background: var(--secondaryColor);
+    padding-bottom: 30px;
+    margin: 10px 5px;
+  }
+  .team-container img{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .team-container h3{
+    font-size: 1rem;
+    padding:5px 0;
+  }
+  .team-container p{
+    font-size: 0.8rem;
   }
 }
