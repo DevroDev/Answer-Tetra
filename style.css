@@ -367,6 +367,50 @@
   padding:10px 0;
 }
 /*Team Ends*/
+/*Contact*/
+.contact{
+  background-image: url(src/contact.jpg);
+  width: 100%;
+  min-height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contact-icons{
+  display:flex;
+  justify-content:center;
+}
+.contact-icons i{
+  font-size: 4rem;
+  margin: 0 20px;
+}
+.fa-facebook{
+  color:#3b5998;
+}
+.fa-instagram{
+  color:#bc2a8d;
+}
+.fa-youtube{
+  color:#FF0000;
+}
+.fa-facebook:hover{
+  color:var(--primaryColor);
+  transition: ease-in-out 0.3s;
+}
+.fa-instagram:hover{
+  color:var(--primaryColor);
+  transition: ease-in-out 0.3s;
+}
+.fa-youtube:hover{
+  color:var(--primaryColor);
+  transition: ease-in-out 0.3s;
+}
+.footer h3{
+  padding-top: 60px;
+  font-size: 1rem;
+}
+/*Contact Ends*/
 .wobble,
 .bounce {
   animation-duration: 5s;
