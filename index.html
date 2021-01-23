@@ -53,8 +53,8 @@
           <ul class="navlinks">
             <li class="js--scroll-to-home"><a href="#">Home</a></li>
             <li class="js--scroll-to-about"><a href="#">About</a></li>
-            <li class="js--scroll-to-resume"><a href="#">Services</a></li>
-            <li class="js--scroll-to-portfolio"><a href="#">Projects</a></li>
+            <li class="js--scroll-to-service"><a href="#">Services</a></li>
+            <li class="js--scroll-to-project"><a href="#">Projects</a></li>
             <li class="js--scroll-to-contact"><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -64,11 +64,12 @@
     <!--Nav End-->
     <div id="home" class="wrap js-section-home">
       <div class="container-fluid landing">
+        <canvas id="canvas"></canvas>
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 landing-left-container">
-              <h2>Answer<br />Web Services</h2>
-              <h4>We Provide Simple Solutions for complex connections</h4>
+            <div class="col-lg-6 js--wp-1 landing-left-container">
+              <h2>Answer<br />Technologies</h2>
+              <h4 class="pt-3">We provide simple solutions for complex connections</h4>
               <div class="row mt-5">
                 <div class="landing-button-1 ml-3">
                   <a href="tel:09792469504">Call Us</a>
@@ -78,7 +79,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 my-5 hide-on-small">
+            <div class="col-lg-6 js--wp-2 my-5 hide-on-small">
               <img src="src/about/about.svg" width="100%" height="200px" />
             </div>
           </div>
@@ -88,10 +89,10 @@
     <!--Home Section End-->
 
     <!--About Session-->
-    <div id="About" class="container-fluid py-5 about">
+    <div id="About" class="js-section-about container-fluid py-5 about">
       <div class="header header py-3 text-center">
         <h4>It's technologically Yours</h4>
-        <h2>What do we do?</h2>
+        <h2>What we do</h2>
         <h4>
           We serve Network Services,System Integration and Software Development
           Solutions
@@ -100,7 +101,7 @@
       <div class="container">
         <div class="about-container row">
           <div
-            class="col-md-4 about-service-card text-center"
+            class="col-md-4 js--wp-3 about-service-card text-center"
             style="
               border-top-left-radius: 30px;
               border-bottom-left-radius: 30px;
@@ -114,14 +115,14 @@
             </p>
             <a href="tel:09-792469504">More Info</a>
           </div>
-          <div class="col-md-4 about-service-card text-center">
+          <div class="col-md-4 js--wp-4 about-service-card text-center">
             <i class="fas fa-code"></i>
             <h3>Development</h3>
             <p>Providing Software Solutions for Digital Transformation</p>
             <a href="tel:09-792469504">More Info</a>
           </div>
           <div
-            class="col-md-4 about-service-card text-center"
+            class="col-md-4 js--wp-5 about-service-card text-center"
             style="
               border-top-right-radius: 30px;
               border-bottom-right-radius: 30px;
@@ -140,10 +141,10 @@
         <h2 class="text-center">Who we are</h2>
         <div class="header-line"></div>
         <div class="about-us-container pt-5 row">
-          <div class="col-lg-6 my-5">
+          <div class="col-lg-6 js--wp-7 my-5">
             <img src="src/about/about.svg" width="100%" height="200px" />
           </div>
-          <div class="col-lg-6 about-us-content my-5">
+          <div class="col-lg-6 js--wp-6 about-us-content my-5">
             <h3>About our Company</h3>
             <p>
               Begin our journey in 2019 with IT Online Training.In the early
@@ -157,14 +158,14 @@
     <!--About Session ends-->
 
     <!--Service Section-->
-    <div id="Service" class="container-fluid service">
+    <div id="Service" class="container-fluid js-section-service service">
       <div class="header py-5">
         <h2 class="text-center">Our Services</h2>
         <div class="header-line"></div>
       </div>
       <div class="container">
         <div class="row service-card-container">
-          <div class="col-lg-3 service-card text-center">
+          <div class="col-lg-3 js--wp-8 service-card text-center">
             <img
               class="my-4"
               src="src/icons/icon (3).png"
@@ -185,7 +186,7 @@
             </ul>
             <a href="tel:999">Call Now</a>
           </div>
-          <div class="col-lg-3 service-card text-center">
+          <div class="col-lg-3 js--wp-9 service-card text-center">
             <img
               class="my-4"
               src="src/icons/icon (2).png"
@@ -206,7 +207,7 @@
             </ul>
             <a href="tel:999">Call Now</a>
           </div>
-          <div class="col-lg-3 service-card text-center">
+          <div class="col-lg-3 js--wp-10 service-card text-center">
             <img
               class="my-4"
               src="src/icons/icon (1).png"
@@ -217,7 +218,7 @@
             <h3>Supreme</h3>
             <ul>
               <li><span>12</span> Lakh</li>
-              <li><span>12</span> Pages</li>
+              <li><span>30</span> Pages</li>
               <li>CMS</li>
               <li>Cloud Hosting</li>
               <li>SSL (Included)</li>
@@ -233,9 +234,9 @@
     <!--Service Section End-->
 
     <!--Projects Section-->
-    <div id="Project" class="container-fluid py-5 project">
+    <div id="Project" class="container-fluid js-section-project py-5 project">
       <div class="header py-3 text-center">
-        <h4>It's technologically Yours</h4>
+        <h4>It's technologically yours</h4>
         <h2>Latest Projects</h2>
         <h4>
           We serve Network Services,System Integration and Software Development
@@ -243,7 +244,7 @@
         </h4>
       </div>
       <div class="row">
-        <div class="col-md-6 project-container text-center">
+        <div class="col-md-6 js--wp-11 project-container text-center">
           <img src="src/projects/pj1.png" />
           <h3>Shweoeain</h3>
           <p>
@@ -252,7 +253,7 @@
           </p>
         </div>
 
-        <div class="col-md-6 project-container text-center">
+        <div class="col-md-6 js--wp-11 project-container text-center">
           <img src="src/projects/pj2.png" />
           <h3>Giggle Shop</h3>
           <p>
@@ -261,7 +262,7 @@
           </p>
         </div>
 
-        <div class="col-md-6 project-container text-center">
+        <div class="col-md-6 js--wp-12 project-container text-center">
           <img src="src/projects/pj3.png" />
           <h3>Answer Tetra</h3>
           <p>
@@ -270,9 +271,9 @@
           </p>
         </div>
 
-        <div class="col-md-6 project-container text-center">
+        <div class="col-md-6 js--wp-12 project-container text-center">
           <img src="src/projects/pj4.png" />
-          <h3>Giggle</h3>
+          <h3>Giggle Net</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -282,7 +283,7 @@
     </div>
     <!--Projects Section End-->
     <!--Facts Section-->
-    <div id="Facts" class="container-fluid text-center py-5">
+    <div id="Facts" class="container-fluid js--wp-14 text-center py-5">
       <div class="fact-header">
         <h2>Fun Facts</h2>
         <div class="header-line"></div>
@@ -290,22 +291,22 @@
       <div class="row pt-3">
         <div class="col-lg-3 facts-content">
           <i class="fa fa-suitcase" aria-hidden="true"> </i>
-          <h3>NaN</h3>
+          <h3 class="count">8</h3>
           <h4>Finished Project</h4>
         </div>
         <div class="col-lg-3 facts-content">
           <i class="fa fa-user" aria-hidden="true"> </i>
-          <h3>8</h3>
+          <h3 class="count">8</h3>
           <h4>Team Members</h4>
         </div>
         <div class="col-lg-3 facts-content">
           <i class="fa fa-user-tie" aria-hidden="true"> </i>
-          <h3>NaN</h3>
+          <h3 class="count">14</h3>
           <h4>Happy Clients</h4>
         </div>
         <div class="col-lg-3 facts-content">
           <i class="fa fa-graduation-cap" aria-hidden="true"> </i>
-          <h3>NaN</h3>
+          <h3 class="count">101</h3>
           <h4>Students</h4>
         </div>
       </div>
@@ -315,14 +316,14 @@
     <!--Team Section-->
     <div id="Team" class="container-fluid team">
       <div class="header py-3 text-center">
-        <h4>It's technologically Yours</h4>
+        <h4>It's technologically yours</h4>
         <h2>Our Team</h2>
         <h4>
           We serve Network Services,System Integration and Software Development
           Solutions
         </h4>
       </div>
-      <div class="row">
+      <div class="row js--wp-13">
         <div class="col-3 text-center team-container">
           <img src="src/team/team1.jpg" alt="" />
           <h3>Si Thu Htun</h3>
@@ -348,7 +349,7 @@
     <!--Team Section End-->
 
     <!--Contact Section-->
-    <div id="Contact" class="container-fluid contact">
+    <div id="Contact" class="container-fluid js-section-contact contact">
       <div class="contact-header py-5">
         <h2 class="text-center">Connect With Us</h2>
         <div class="header-line"></div>

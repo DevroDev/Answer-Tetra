@@ -23,7 +23,12 @@
 .team {
   background-color: var(--textWhite);
 }
-
+#canvas{
+  position: absolute;
+  top: 0;
+  left:0;
+  display:none;
+}
 .header-line {
   border-bottom: 3px solid var(--primaryColor);
   margin: 0 45%;
@@ -330,14 +335,14 @@
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
 }
-.project-container p {
-  padding: 0 30px;
-  text-align: left;
+.project-container p{
+  padding: 0 60px;
+  text-align: center;
 }
 /*Project Ends*/
 /*Facts*/
 #Facts {
-  background-image: url(src/bg-2.jpg);
+  background-color: var(--primaryColor);
   width: 100%;
   min-height: 40vh;
   background-repeat: no-repeat;
@@ -410,6 +415,7 @@
   transition: ease-in-out 0.3s;
 }
 .footer h3 {
+  color: var(--secondaryText);
   padding-top: 60px;
   font-size: 1rem;
 }
@@ -435,6 +441,7 @@
 .js--wp-11,
 .js--wp-12,
 .js--wp-13,
+.js--wp-14,
 .js--wp-about {
   opacity: 0;
   transition: linear 1s;
@@ -452,6 +459,7 @@
 .js--wp-11 .animated,
 .js--wp-12 .animated,
 .js--wp-13 .animated,
+.js--wp-14 .animated,
 .js--wp-about .animated {
   opacity: 1;
   animation-duration: 5s;
@@ -503,13 +511,26 @@
     display: block;
   }
   /*Home*/
+  #canvas{
+    position: absolute;
+    top: 0;
+    left:0;
+    display:block;
+  }
   .hide-on-small{
     display:none;
+  }
+  .landing h2{
+    font-size: 2.5rem;
   }
   /*Service*/
   .service-card {
     padding-bottom: 30px;
     margin: 10px 5px;
+  }
+  .project-container img {
+    width: 320px;
+    height: 180px;
   }
   .team-container img {
     width: 80px;
@@ -522,5 +543,14 @@
   }
   .team-container p {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing h2{
+    font-size: 2rem;
+  }
+  .project-container img {
+    width: 280px;
+    height: 160px;
   }
 }
