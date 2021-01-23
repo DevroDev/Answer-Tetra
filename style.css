@@ -3,23 +3,25 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Helvetica Neue';
   box-sizing: border-box;
-  color: var(--textWhite);
+  color: var(--primaryText);
   letter-spacing: 0.1rem;
 }
 :root {
-  --primaryColor: #159e87;
-  --secondaryColor: #a88532;
+  --primaryColor: #013e05;
+  --secondaryColor: #f28705;
   --textLight: #9c9c9c;
   --textDark: #000;
   --textWhite: #fff;
+  --primaryText: #000;
+  --secondaryText: #fff;
 }
 /*Golbal Style*/
 .about,
 .project,
-.team{
-  background-color: #000;
+.team {
+  background-color: var(--textWhite);
 }
 
 .header-line {
@@ -38,6 +40,15 @@
 }
 .header h4 {
   font-size: 1.2rem;
+}
+.fact-header h2,
+.contact-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondaryText);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 10px 0;
 }
 /*Global Style*/
 .nav {
@@ -93,7 +104,7 @@
 }
 .nav div.main_list ul li a:hover {
   transition: ease-in-out 0.4s;
-  color:var(--primaryColor);
+  color: var(--primaryColor);
 }
 .nav div.main_list ul li a:active {
   border: 3px solid #fff;
@@ -159,65 +170,50 @@
 }
 /*Home Page*/
 .landing {
-  background-image: url(src/vg-1.jpg);
+  background-color:var(--primaryColor);
   width: 100%;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.landing-box {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--textDark);
-  opacity: 0.9;
-  text-align: center;
-  min-height: 70vh;
-  color: #fff;
+.landing-left-container h2{
+  font-size: 3rem;
+  color: var(--secondaryText);
+  text-transform: uppercase;
 }
-.landing-box h2 {
-  font-size: 3.5rem;
-}
-.landing-button-container {
-  text-align: center;
-}
-.landing-button-1 a {
-  padding: 10px 30px;
-  border: 2px solid var(--primaryColor);
-  color: var(--textWhite);
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  border-radius: 30px;
+.landing-left-container h4{
   font-size: 1.5rem;
+  color:var(--secondaryText)
 }
-.landing-button-2 a {
+.landing-button-1 a{
   padding: 10px 30px;
-  border: 2px solid var(--secondaryColor);
-  color: var(--textWhite);
-  font-weight: 500;
-  letter-spacing: 0.2rem;
+  background-color:var(--textWhite);
+  color:var(--primaryColor);
+  text-transform: uppercase;
   border-radius: 30px;
-  font-size: 1.5rem;
 }
-.landing-button-1 a:hover {
-  background-color: var(--primaryColor);
-  color: var(--textWhite);
+.landing-button-1 a:hover{
   text-decoration: none;
-  transition: ease-in-out 0.3s;
+  border:1px solid var(--textWhite);
+  background:none;
+  color:var(--textWhite);
+  transition:ease-in-out 0.3s;
 }
-.landing-button-2 a:hover {
-  background-color: var(--secondaryColor);
-  color: var(--textWhite);
+.landing-button-2 a{
+  padding: 10px 30px;
+  border:1px solid var(--textWhite);
+  color:var(--textWhite);
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.landing-button-2 a:hover{
   text-decoration: none;
-  transition: ease-in-out 0.3s;
+  transition:ease-in-out 0.3s;
+  background-color:var(--textWhite);
+  color:var(--primaryColor);
 }
 /*Home Ends*/
 /*About*/
@@ -243,7 +239,6 @@
   color: var(--textLight);
 }
 .about-service-card a {
-  
   border-radius: 30px;
   padding: 10px 30px;
   background-color: var(--primaryColor);
@@ -264,7 +259,7 @@
 }
 /*About Ends*/
 /*Service Start*/
-.service{
+.service {
   background-image: url(src/bg-3.jpg);
   width: 100%;
   min-height: 100vh;
@@ -273,38 +268,44 @@
   background-position: center;
   background-attachment: fixed;
 }
-.service h2{
-  color: var(--primaryColor);
+.service h2 {
+  color: var(--secondaryText);
 }
-.service-card{
-  background: var(--secondaryColor);
+.service-card-container{
+  display: flex;
+  justify-content: center;
+}
+.service-card {
+  background: var(--primaryColor);
   padding-bottom: 30px;
   margin: 10px 30px;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(161,161,161,1);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(161,161,161,1);
-  box-shadow: 0px 0px 5px 1px rgba(161,161,161,1);
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(161, 161, 161, 1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(161, 161, 161, 1);
+  box-shadow: 0px 0px 5px 1px rgba(161, 161, 161, 1);
 }
-.service-card h3{
-  color:#fff;
+.service-card h3 {
+  color: var(--secondaryText);
   text-transform: uppercase;
 }
-.service-card span{
+.service-card span {
   font-weight: bold;
+  color: var(--secondaryText)
 }
-.service-card li{
-  color:#fff;
+.service-card li {
+  color: #fff;
   font-size: 1.2rem;
   list-style-type: none;
 }
 .service-card a {
   padding: 10px 30px;
   border-radius: 30px;
-  background-color: var(--primaryColor);
-  color: white;
+  background-color: var(--textWhite);
+  color: var(--primaryColor);
 }
 .service-card a:hover {
-  border: 1px solid var(--primaryColor);
-  color: black;
+  border: 1px solid var(--secondaryText);
+  color: white;
   text-decoration: none;
   background: none;
   transition: ease-in-out 0.3s;
@@ -344,31 +345,33 @@
   background-position: center;
   background-attachment: fixed;
 }
-.facts-content i{
-  color:var(--primaryColor);
-  font-size:3rem;
+.facts-content i {
+  color: var(--secondaryText);
+  font-size: 3rem;
 }
-.facts-content h3{
+.facts-content h3 {
+  color: var(--secondaryText);
   padding-top: 5px;
-  font-size:3rem;
+  font-size: 3rem;
 }
-.facts-content h4{
+.facts-content h4 {
   font-size: 1.2rem;
+  color: var(--secondaryText);
 }
 /*Facts Ends*/
 /*Team*/
-.team-container img{
-  object-fit:cover;
-  width:200px;
+.team-container img {
+  object-fit: cover;
+  width: 200px;
   height: 200px;
   border-radius: 50%;
 }
-.team-container h3{
-  padding:10px 0;
+.team-container h3 {
+  padding: 10px 0;
 }
 /*Team Ends*/
 /*Contact*/
-.contact{
+.contact {
   background-image: url(src/contact.jpg);
   width: 100%;
   min-height: 60vh;
@@ -377,36 +380,36 @@
   background-position: center;
   background-attachment: fixed;
 }
-.contact-icons{
-  display:flex;
-  justify-content:center;
+.contact-icons {
+  display: flex;
+  justify-content: center;
 }
-.contact-icons i{
+.contact-icons i {
   font-size: 4rem;
   margin: 0 20px;
 }
-.fa-facebook{
-  color:#3b5998;
+.fa-facebook {
+  color: #3b5998;
 }
-.fa-instagram{
-  color:#bc2a8d;
+.fa-instagram {
+  color: #bc2a8d;
 }
-.fa-youtube{
-  color:#FF0000;
+.fa-youtube {
+  color: #ff0000;
 }
-.fa-facebook:hover{
-  color:var(--primaryColor);
+.fa-facebook:hover {
+  color: var(--primaryColor);
   transition: ease-in-out 0.3s;
 }
-.fa-instagram:hover{
-  color:var(--primaryColor);
+.fa-instagram:hover {
+  color: var(--primaryColor);
   transition: ease-in-out 0.3s;
 }
-.fa-youtube:hover{
-  color:var(--primaryColor);
+.fa-youtube:hover {
+  color: var(--primaryColor);
   transition: ease-in-out 0.3s;
 }
-.footer h3{
+.footer h3 {
   padding-top: 60px;
   font-size: 1rem;
 }
@@ -500,28 +503,24 @@
     display: block;
   }
   /*Home*/
-  .landing-box {
-    width: 90%;
-  }
-  .landing-box h2 {
-    font-size: 2.5rem;
+  .hide-on-small{
+    display:none;
   }
   /*Service*/
-  .service-card{
-    background: var(--secondaryColor);
+  .service-card {
     padding-bottom: 30px;
     margin: 10px 5px;
   }
-  .team-container img{
-    width:80px;
+  .team-container img {
+    width: 80px;
     height: 80px;
     border-radius: 50%;
   }
-  .team-container h3{
+  .team-container h3 {
     font-size: 1rem;
-    padding:5px 0;
+    padding: 5px 0;
   }
-  .team-container p{
+  .team-container p {
     font-size: 0.8rem;
   }
 }

@@ -6,10 +6,7 @@
     <meta property="og:title" content="Answer Technology" />
     <meta property="og:url" content="https://answertechnologies.tech" />
     <meta property="og:site_name" content="Answer Technologies Web Page" />
-    <meta
-      property="og:description"
-      content=""
-    />
+    <meta property="og:description" content="" />
     <title>Answer Technologies | Website</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -67,19 +64,22 @@
     <!--Nav End-->
     <div id="home" class="wrap js-section-home">
       <div class="container-fluid landing">
-        <div class="landing-box">
-          <h2>ANSWER TECHNOLOGIES COMPANY</h2>
-          <h4 class="py-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h4>
-
-          <div class="row landing-button-container mt-3">
-            <div class="landing-button-1 mr-2">
-              <a href="#">Call Us</a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 landing-left-container">
+              <h2>Answer<br />Web Services</h2>
+              <h4>We Provide Simple Solutions for complex connections</h4>
+              <div class="row mt-5">
+                <div class="landing-button-1 ml-3">
+                  <a href="tel:09792469504">Call Us</a>
+                </div>
+                <div class="landing-button-2 ml-3">
+                  <a href="tel:09792469504">Services</a>
+                </div>
+              </div>
             </div>
-            <div class="landing-button-2 ml-2">
-              <a href="#">Services</a>
+            <div class="col-lg-6 my-5 hide-on-small">
+              <img src="src/about/about.svg" width="100%" height="200px" />
             </div>
           </div>
         </div>
@@ -99,7 +99,13 @@
       </div>
       <div class="container">
         <div class="about-container row">
-          <div class="col-md-4 about-service-card text-center" style="border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
+          <div
+            class="col-md-4 about-service-card text-center"
+            style="
+              border-top-left-radius: 30px;
+              border-bottom-left-radius: 30px;
+            "
+          >
             <i class="fas fa-network-wired"></i>
             <h3>Network Solutions</h3>
             <p>
@@ -114,7 +120,13 @@
             <p>Providing Software Solutions for Digital Transformation</p>
             <a href="tel:09-792469504">More Info</a>
           </div>
-          <div class="col-md-4 about-service-card text-center" style="border-top-right-radius: 30px;border-bottom-right-radius: 30px;">
+          <div
+            class="col-md-4 about-service-card text-center"
+            style="
+              border-top-right-radius: 30px;
+              border-bottom-right-radius: 30px;
+            "
+          >
             <i class="fas fa-graduation-cap"></i>
             <h3>Training</h3>
             <p>
@@ -145,61 +157,79 @@
     <!--About Session ends-->
 
     <!--Service Section-->
-      <div id="Service" class="container-fluid service">
-        <div class="header py-5">
-          <h2 class="text-center">Our Services</h2>
-          <div class="header-line"></div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col service-card text-center">
-              <img class="my-2" src="src/icons/icon (3).png" alt="" width="80px" height="80px">
-              <h3>Standard</h3>
-              <ul>
-                <li><span>4</span> Lakh</li>
-                <li><span>10</span> Pages</li>
-                <li>Static</li>
-                <li>Cloud Hosting</li>
-                <li>SSL not Included</li>
-                <li>Choose From 5 Designs</li>
-                <li>Google Map(not include)</li>
-                <li>Maintainence(4 times)</li>
-              </ul>
-              <a href="tel:999">Call Now</a>
-            </div>
-            <div class="col service-card text-center">
-              <img class="my-2" src="src/icons/icon (2).png" alt="" width="80px" height="80px">
-              <h3>Premium</h3>
-              <ul>
-                <li><span>8</span> Lakh</li>
-                <li><span>20</span> Pages</li>
-                <li>CMS</li>
-                <li>Cloud Hosting</li>
-                <li>SSL (Included)</li>
-                <li>Choose From 10 Designs</li>
-                <li>Google Map(included)</li>
-                <li>Maintainence(8 times)</li>
-              </ul>
-              <a href="tel:999">Call Now</a>
-            </div>
-            <div class="col service-card text-center">
-              <img class="my-2" src="src/icons/icon (1).png" alt="" width="80px" height="80px">
-              <h3>Supreme</h3>
-              <ul>
-                <li><span>12</span> Lakh</li>
-                <li><span>12</span> Pages</li>
-                <li>CMS</li>
-                <li>Cloud Hosting</li>
-                <li>SSL (Included)</li>
-                <li>Choose From 15 Designs</li>
-                <li>Google Map(included)</li>
-                <li>Maintainence(10 times)</li>
-              </ul>
-              <a href="tel:999">Call Now</a>
-            </div>
+    <div id="Service" class="container-fluid service">
+      <div class="header py-5">
+        <h2 class="text-center">Our Services</h2>
+        <div class="header-line"></div>
+      </div>
+      <div class="container">
+        <div class="row service-card-container">
+          <div class="col-lg-3 service-card text-center">
+            <img
+              class="my-4"
+              src="src/icons/icon (3).png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <h3>Standard</h3>
+            <ul>
+              <li><span>4</span> Lakh</li>
+              <li><span>10</span> Pages</li>
+              <li>Static</li>
+              <li>Cloud Hosting</li>
+              <li>SSL not Included</li>
+              <li>Choose From 5 Designs</li>
+              <li>Google Map(not include)</li>
+              <li>Maintainence(4 times)</li>
+            </ul>
+            <a href="tel:999">Call Now</a>
+          </div>
+          <div class="col-lg-3 service-card text-center">
+            <img
+              class="my-4"
+              src="src/icons/icon (2).png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <h3>Premium</h3>
+            <ul>
+              <li><span>8</span> Lakh</li>
+              <li><span>20</span> Pages</li>
+              <li>CMS</li>
+              <li>Cloud Hosting</li>
+              <li>SSL (Included)</li>
+              <li>Choose From 10 Designs</li>
+              <li>Google Map(included)</li>
+              <li>Maintainence(8 times)</li>
+            </ul>
+            <a href="tel:999">Call Now</a>
+          </div>
+          <div class="col-lg-3 service-card text-center">
+            <img
+              class="my-4"
+              src="src/icons/icon (1).png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <h3>Supreme</h3>
+            <ul>
+              <li><span>12</span> Lakh</li>
+              <li><span>12</span> Pages</li>
+              <li>CMS</li>
+              <li>Cloud Hosting</li>
+              <li>SSL (Included)</li>
+              <li>Choose From 15 Designs</li>
+              <li>Google Map(included)</li>
+              <li>Maintainence(10 times)</li>
+            </ul>
+            <a href="tel:999">Call Now</a>
           </div>
         </div>
       </div>
+    </div>
     <!--Service Section End-->
 
     <!--Projects Section-->
@@ -253,7 +283,7 @@
     <!--Projects Section End-->
     <!--Facts Section-->
     <div id="Facts" class="container-fluid text-center py-5">
-      <div class="fact-header header">
+      <div class="fact-header">
         <h2>Fun Facts</h2>
         <div class="header-line"></div>
       </div>
@@ -282,57 +312,56 @@
     </div>
     <!--Facts Section End-->
 
-
     <!--Team Section-->
-      <div id="Team" class="container-fluid team">
-        <div class="header py-3 text-center">
-          <h4>It's technologically Yours</h4>
-          <h2>Our Team</h2>
-          <h4>
-            We serve Network Services,System Integration and Software Development
-            Solutions
-          </h4>
+    <div id="Team" class="container-fluid team">
+      <div class="header py-3 text-center">
+        <h4>It's technologically Yours</h4>
+        <h2>Our Team</h2>
+        <h4>
+          We serve Network Services,System Integration and Software Development
+          Solutions
+        </h4>
+      </div>
+      <div class="row">
+        <div class="col-3 text-center team-container">
+          <img src="src/team/team1.jpg" alt="" />
+          <h3>Si Thu Htun</h3>
+          <p>Mananging Director</p>
         </div>
-        <div class="row">
-          <div class="col-3 text-center team-container">
-            <img src="src/team/team1.jpg" alt="">
-            <h3>Si Thu Htun</h3>
-            <p>Mananging Director</p>
-          </div>
-          <div class="col-3 text-center team-container">
-            <img src="src/team/team3.jpeg" alt="">
-            <h3>Phone Min Khant</h3>
-            <p>DevOps Engineer</p>
-          </div>
-          <div class="col-3 text-center team-container">
-            <img src="src/team/team4.jpeg" alt="">
-            <h3>Pyae Htet Shein</h3>
-            <p>Software Engineer</p>
-          </div>
-          <div class="col-3 text-center team-container">
-            <img src="src/team/team2.jpg" alt="">
-            <h3>Kaung Thainkha</h3>
-            <p>UI/UX Designer</p>
-          </div>
+        <div class="col-3 text-center team-container">
+          <img src="src/team/team3.jpeg" alt="" />
+          <h3>Phone Min Khant</h3>
+          <p>DevOps Engineer</p>
+        </div>
+        <div class="col-3 text-center team-container">
+          <img src="src/team/team4.jpeg" alt="" />
+          <h3>Pyae Htet Shein</h3>
+          <p>Software Engineer</p>
+        </div>
+        <div class="col-3 text-center team-container">
+          <img src="src/team/team2.jpg" alt="" />
+          <h3>Kaung Thainkha</h3>
+          <p>UI/UX Designer</p>
         </div>
       </div>
+    </div>
     <!--Team Section End-->
 
     <!--Contact Section-->
-      <div id="Contact" class="container-fluid contact">
-        <div class="header py-5">
-          <h2 class="text-center">Connect With Us</h2>
-          <div class="header-line"></div>
-        </div>
-        <div class="row contact-icons">
-          <i class="fab fa-facebook" aria-hidden="true"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-youtube"></i>
-        </div>
-        <div class="footer text-center pt-5">
-          <h3>&copy; 2021 Answer Technologies</h3>
-        </div>
+    <div id="Contact" class="container-fluid contact">
+      <div class="contact-header py-5">
+        <h2 class="text-center">Connect With Us</h2>
+        <div class="header-line"></div>
       </div>
+      <div class="row contact-icons">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="footer text-center pt-5">
+        <h3>&copy; 2021 Answer Technologies</h3>
+      </div>
+    </div>
     <!--Contact Section End-->
 
     <!--Script-->
