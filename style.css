@@ -46,14 +46,16 @@
 .header h4 {
   font-size: 1.2rem;
 }
-.fact-header h2,
-.contact-header h2 {
+.fact-header h2{
   font-size: 2rem;
   font-weight: bold;
   color: var(--secondaryText);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding: 10px 0;
+}
+.contact-header h2 {
+  color:var(--primaryText)
 }
 /*Global Style*/
 .nav {
@@ -265,7 +267,7 @@
 /*About Ends*/
 /*Service Start*/
 .service {
-  background-image: url(src/bg-3.jpg);
+  background-image: url(src/bg-3.JPG);
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -377,7 +379,7 @@
 /*Team Ends*/
 /*Contact*/
 .contact {
-  background-image: url(src/contact.jpg);
+  background-image: url(src/contact.JPG);
   width: 100%;
   min-height: 60vh;
   background-repeat: no-repeat;
@@ -415,7 +417,7 @@
   transition: ease-in-out 0.3s;
 }
 .footer h3 {
-  color: var(--secondaryText);
+  color: var(--primaryText);
   padding-top: 60px;
   font-size: 1rem;
 }
